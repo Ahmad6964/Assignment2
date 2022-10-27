@@ -34,18 +34,7 @@ class myPromise {
 
   // Testing -------------------------------------------------->
   
-  function myfun(){
-    const userNam = document.getElementById('uname').value
-    const time = document.getElementById('alarm').value
-    console.log(userNam, time)
-   
-    //  console.log(userNam , time);
-    customAlarm(userNam , time ).then(()=>{
-      resolve(res);
- })?.catch(()=>{
-  reject(err);
- })
-  }
+
   
   function customAlarm(userNam , time){
    return new myPromise((resolve, reject) => {
@@ -60,4 +49,17 @@ class myPromise {
     }, time);
           
    })
+  }
+
+  function myfun(){
+    const userNam = document.getElementById('uname').value
+    const time = document.getElementById('alarm').value
+    console.log(userNam, time)
+   
+    //  console.log(userNam , time);
+    customAlarm(userNam , time ).then(()=>{
+      resolve(res);
+ })?.catch(()=>{
+  reject(err);
+ })
   }
