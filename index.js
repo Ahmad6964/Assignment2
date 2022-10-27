@@ -61,33 +61,3 @@ class myPromise {
           
    })
   }
-  
-  // 
-  
-  
-  // Code Testing
-  
-//   setTimeout(() => {
-//     const test1 = new myPromise((resolve, reject) => {
-//       resolve('resolved');
-//     });
-//     test1.then((res) => {
-//       console.log(res);
-//     });
-//     test1.catch((err) => {
-//       console.log(err);
-//     });
-//   }, 2000);
-  
-//   setTimeout(() => {
-//     const test2 = new myPromise((resolve, reject) => {
-//       reject("rejected");
-//     });
-  
-//     test2.then((res) => {
-//       console.log(res);
-//     });
-//     test2.catch((err) => {
-//       console.log(err);
-//     });
-//   }, 4000);
